@@ -15,6 +15,10 @@
 		111DB0412421C2B10072F108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111DB03F2421C2B10072F108 /* LaunchScreen.storyboard */; };
 		111DB04C2421C2B10072F108 /* FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111DB04B2421C2B10072F108 /* FacebookTests.swift */; };
 		111DB0572421C2B10072F108 /* FacebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111DB0562421C2B10072F108 /* FacebookUITests.swift */; };
+		1150151F242223FB009CEE73 /* Feedfacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1150151E242223FB009CEE73 /* Feedfacebook.swift */; };
+		1150152124224BA6009CEE73 /* Profilefacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1150152024224BA6009CEE73 /* Profilefacebook.swift */; };
+		115E79632423726F00171CE0 /* PostDataProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E79622423726F00171CE0 /* PostDataProfile.swift */; };
+		11A806442423658000E4B3CC /* FriendListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A806432423658000E4B3CC /* FriendListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		111DB0312421C2B10072F108 /* Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		111DB0312421C2B10072F108 /* clone_Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clone_Facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		111DB0342421C2B10072F108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		111DB0362421C2B10072F108 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		111DB0382421C2B10072F108 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		111DB0522421C2B10072F108 /* FacebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		111DB0562421C2B10072F108 /* FacebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookUITests.swift; sourceTree = "<group>"; };
 		111DB0582421C2B10072F108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1150151E242223FB009CEE73 /* Feedfacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedfacebook.swift; sourceTree = "<group>"; };
+		1150152024224BA6009CEE73 /* Profilefacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profilefacebook.swift; sourceTree = "<group>"; };
+		115E79622423726F00171CE0 /* PostDataProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataProfile.swift; sourceTree = "<group>"; };
+		11A806432423658000E4B3CC /* FriendListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +97,7 @@
 		111DB0322421C2B10072F108 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				111DB0312421C2B10072F108 /* Facebook.app */,
+				111DB0312421C2B10072F108 /* clone_Facebook.app */,
 				111DB0472421C2B10072F108 /* FacebookTests.xctest */,
 				111DB0522421C2B10072F108 /* FacebookUITests.xctest */,
 			);
@@ -99,6 +107,8 @@
 		111DB0332421C2B10072F108 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				115E79612423725400171CE0 /* Data */,
+				1150151D242223D6009CEE73 /* Feed */,
 				111DB0342421C2B10072F108 /* AppDelegate.swift */,
 				111DB0362421C2B10072F108 /* SceneDelegate.swift */,
 				111DB0382421C2B10072F108 /* ViewController.swift */,
@@ -128,6 +138,24 @@
 			path = FacebookUITests;
 			sourceTree = "<group>";
 		};
+		1150151D242223D6009CEE73 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1150151E242223FB009CEE73 /* Feedfacebook.swift */,
+				1150152024224BA6009CEE73 /* Profilefacebook.swift */,
+				11A806432423658000E4B3CC /* FriendListTableViewCell.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		115E79612423725400171CE0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				115E79622423726F00171CE0 /* PostDataProfile.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,7 +173,7 @@
 			);
 			name = Facebook;
 			productName = Facebook;
-			productReference = 111DB0312421C2B10072F108 /* Facebook.app */;
+			productReference = 111DB0312421C2B10072F108 /* clone_Facebook.app */;
 			productType = "com.apple.product-type.application";
 		};
 		111DB0462421C2B10072F108 /* FacebookTests */ = {
@@ -260,8 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				111DB0392421C2B10072F108 /* ViewController.swift in Sources */,
+				11A806442423658000E4B3CC /* FriendListTableViewCell.swift in Sources */,
+				1150152124224BA6009CEE73 /* Profilefacebook.swift in Sources */,
 				111DB0352421C2B10072F108 /* AppDelegate.swift in Sources */,
+				115E79632423726F00171CE0 /* PostDataProfile.swift in Sources */,
 				111DB0372421C2B10072F108 /* SceneDelegate.swift in Sources */,
+				1150151F242223FB009CEE73 /* Feedfacebook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,13 +467,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NC49C3JWHD;
 				INFOPLIST_FILE = Facebook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Facebook;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Facebookclone;
+				PRODUCT_NAME = clone_Facebook;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,13 +486,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NC49C3JWHD;
 				INFOPLIST_FILE = Facebook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Facebook;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Facebookclone;
+				PRODUCT_NAME = clone_Facebook;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
