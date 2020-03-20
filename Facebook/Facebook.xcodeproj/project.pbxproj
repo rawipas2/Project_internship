@@ -17,7 +17,9 @@
 		111DB0572421C2B10072F108 /* FacebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111DB0562421C2B10072F108 /* FacebookUITests.swift */; };
 		1150151F242223FB009CEE73 /* Feedfacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1150151E242223FB009CEE73 /* Feedfacebook.swift */; };
 		1150152124224BA6009CEE73 /* Profilefacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1150152024224BA6009CEE73 /* Profilefacebook.swift */; };
-		115E79632423726F00171CE0 /* PostDataProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E79622423726F00171CE0 /* PostDataProfile.swift */; };
+		115E79632423726F00171CE0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E79622423726F00171CE0 /* Data.swift */; };
+		11A11A602424AE3E003EB1F1 /* Myselfs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A11A5F2424AE3E003EB1F1 /* Myselfs.swift */; };
+		11A11A622424AEA0003EB1F1 /* MyFriendPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A11A612424AEA0003EB1F1 /* MyFriendPost.swift */; };
 		11A806442423658000E4B3CC /* FriendListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A806432423658000E4B3CC /* FriendListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +57,9 @@
 		111DB0582421C2B10072F108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1150151E242223FB009CEE73 /* Feedfacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedfacebook.swift; sourceTree = "<group>"; };
 		1150152024224BA6009CEE73 /* Profilefacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profilefacebook.swift; sourceTree = "<group>"; };
-		115E79622423726F00171CE0 /* PostDataProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataProfile.swift; sourceTree = "<group>"; };
+		115E79622423726F00171CE0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		11A11A5F2424AE3E003EB1F1 /* Myselfs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myselfs.swift; sourceTree = "<group>"; };
+		11A11A612424AEA0003EB1F1 /* MyFriendPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendPost.swift; sourceTree = "<group>"; };
 		11A806432423658000E4B3CC /* FriendListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,8 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				1150151E242223FB009CEE73 /* Feedfacebook.swift */,
+				11A11A612424AEA0003EB1F1 /* MyFriendPost.swift */,
 				1150152024224BA6009CEE73 /* Profilefacebook.swift */,
 				11A806432423658000E4B3CC /* FriendListTableViewCell.swift */,
+				11A11A5F2424AE3E003EB1F1 /* Myselfs.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -151,7 +157,7 @@
 		115E79612423725400171CE0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				115E79622423726F00171CE0 /* PostDataProfile.swift */,
+				115E79622423726F00171CE0 /* Data.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -288,10 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				111DB0392421C2B10072F108 /* ViewController.swift in Sources */,
+				11A11A622424AEA0003EB1F1 /* MyFriendPost.swift in Sources */,
 				11A806442423658000E4B3CC /* FriendListTableViewCell.swift in Sources */,
 				1150152124224BA6009CEE73 /* Profilefacebook.swift in Sources */,
+				11A11A602424AE3E003EB1F1 /* Myselfs.swift in Sources */,
 				111DB0352421C2B10072F108 /* AppDelegate.swift in Sources */,
-				115E79632423726F00171CE0 /* PostDataProfile.swift in Sources */,
+				115E79632423726F00171CE0 /* Data.swift in Sources */,
 				111DB0372421C2B10072F108 /* SceneDelegate.swift in Sources */,
 				1150151F242223FB009CEE73 /* Feedfacebook.swift in Sources */,
 			);

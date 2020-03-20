@@ -19,7 +19,7 @@ class Profilefacebook: UIViewController, UITableViewDelegate, UITableViewDataSou
         case 1 :
             return 3
         case 4 :
-            return 3
+            return Friends.count
         default:
             return 1
         }
@@ -46,6 +46,4 @@ class Profilefacebook: UIViewController, UITableViewDelegate, UITableViewDataSou
             return cell
         }
     }
-    
-    
 }

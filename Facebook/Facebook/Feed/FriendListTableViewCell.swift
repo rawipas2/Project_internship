@@ -27,7 +27,6 @@ class FriendListTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let x = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        x.backgroundColor = .black
         
         return x
     }

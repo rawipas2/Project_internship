@@ -9,8 +9,12 @@
 import Foundation
 import UIKit
 
-class Postfacebook: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class Postfacebook: UIViewController, UITableViewDataSource, UITableViewDelegate, MySelfsDelegate {
     
+    func didTapOnProfileButton() {
+        //
+        performSegue(withIdentifier: "SegueToProfileFacebookView", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,22 +34,36 @@ class Postfacebook: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (section == 0){
-            return 1
+            return 5
         }
         else {
-            return 3
+            return Friends.count
         }
    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         if (indexPath.section == 0){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cells01", for: indexPath)
+            let Me = MySelf
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cells01", for: indexPath) as! Myselfs
+            cell.delegate = self
+            cell.ImageProfile?.image = UIImage(named: Me["image"] ?? "")
                     return cell
         }
         else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cells02", for: indexPath)
+            let Friend = Friends[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cells02", for: indexPath) as! MyFriendPost
+            cell.ImageProfile?.image = UIImage(named: Friend["image"] as! String )
+            cell.Name?.text = Friend["name"] as? String
+            cell.Des?.text = Friend["Des"] as? String
+            cell.Time?.text = "\(Friend["time"] ?? "") s"
                     return cell
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
+
+
