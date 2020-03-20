@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Gx-22-81c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Gx-22-81c">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -339,12 +339,15 @@
                                 <rect key="frame" x="184" y="353" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="avA-1N-zjJ" kind="show" identifier="didTabOnProfileS" id="2eb-c6-UzH"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-3b-LmB">
-                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="643.00000000000011"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cells01" rowHeight="341" id="tQk-Ba-0rs">
-                                        <rect key="frame" x="20" y="55.333332061767578" width="374" height="341"/>
+                                        <rect key="frame" x="0.0" y="55.333332061767578" width="374" height="341"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tQk-Ba-0rs" id="F7p-f9-B77">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="341"/>
@@ -450,7 +453,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cells02" rowHeight="51" id="COG-jf-BcQ">
-                                        <rect key="frame" x="20" y="396.33333206176758" width="374" height="51"/>
+                                        <rect key="frame" x="0.0" y="396.33333206176758" width="374" height="51"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="COG-jf-BcQ" id="cmm-di-oVB">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="51"/>
@@ -608,7 +611,7 @@
                                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             </collectionViewFlowLayout>
                                                             <cells>
-                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="cxa-CW-Ldz" customClass="Colletionview" customModule="clone_Facebook" customModuleProvider="target">
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="cxa-CW-Ldz" customClass="MyFrindProfileCollectionViewCell" customModule="clone_Facebook" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="111" height="165"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NO9-Ib-mkf">
@@ -618,11 +621,18 @@
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcV-kK-U7U">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="111" height="136"/>
                                                                                 <subviews>
-                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6rz-Zw-iAm">
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6rz-Zw-iAm">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="136"/>
                                                                                     </imageView>
                                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtr-5l-OSL">
                                                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="136"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" secondItem="Qtr-5l-OSL" secondAttribute="height" multiplier="111:136" id="4Bc-WN-1hG"/>
+                                                                                            <constraint firstAttribute="height" constant="136" id="crT-Qo-Zdh"/>
+                                                                                        </constraints>
+                                                                                        <connections>
+                                                                                            <action selector="didTabOnProfileFriend:" destination="cxa-CW-Ldz" eventType="touchUpInside" id="KhL-Hc-ODi"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -668,6 +678,10 @@
                                                                         </constraints>
                                                                     </collectionViewCellContentView>
                                                                     <size key="customSize" width="111" height="165"/>
+                                                                    <connections>
+                                                                        <outlet property="FriendName" destination="kYt-g1-DMZ" id="aj3-MD-Unm"/>
+                                                                        <outlet property="ImageFriend" destination="6rz-Zw-iAm" id="PSt-bq-wX0"/>
+                                                                    </connections>
                                                                 </collectionViewCell>
                                                             </cells>
                                                         </collectionView>
@@ -963,16 +977,16 @@
             <point key="canvasLocation" x="-75" y="257"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
+        <image name="heart.circle" catalog="system" width="64" height="60"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="magnifyingglass.circle" catalog="system" width="64" height="60"/>
+        <image name="message.circle" catalog="system" width="64" height="60"/>
+        <image name="text.justify" catalog="system" width="64" height="50"/>
+        <image name="timer" catalog="system" width="64" height="60"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="l84-m6-0jp"/>
     </inferredMetricsTieBreakers>
-    <resources>
-        <image name="ellipsis" catalog="system" width="128" height="37"/>
-        <image name="heart.circle" catalog="system" width="128" height="121"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
-        <image name="message.circle" catalog="system" width="128" height="121"/>
-        <image name="text.justify" catalog="system" width="128" height="100"/>
-        <image name="timer" catalog="system" width="128" height="121"/>
-    </resources>
 </document>

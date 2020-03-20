@@ -21,6 +21,7 @@
 		11A11A602424AE3E003EB1F1 /* Myselfs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A11A5F2424AE3E003EB1F1 /* Myselfs.swift */; };
 		11A11A622424AEA0003EB1F1 /* MyFriendPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A11A612424AEA0003EB1F1 /* MyFriendPost.swift */; };
 		11A806442423658000E4B3CC /* FriendListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A806432423658000E4B3CC /* FriendListTableViewCell.swift */; };
+		11E3C9752424E217009059E8 /* MyFrindProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3C9742424E217009059E8 /* MyFrindProfileCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		11A11A5F2424AE3E003EB1F1 /* Myselfs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myselfs.swift; sourceTree = "<group>"; };
 		11A11A612424AEA0003EB1F1 /* MyFriendPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendPost.swift; sourceTree = "<group>"; };
 		11A806432423658000E4B3CC /* FriendListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListTableViewCell.swift; sourceTree = "<group>"; };
+		11E3C9742424E217009059E8 /* MyFrindProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrindProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				1150152024224BA6009CEE73 /* Profilefacebook.swift */,
 				11A806432423658000E4B3CC /* FriendListTableViewCell.swift */,
 				11A11A5F2424AE3E003EB1F1 /* Myselfs.swift */,
+				11E3C9742424E217009059E8 /* MyFrindProfileCollectionViewCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				111DB0352421C2B10072F108 /* AppDelegate.swift in Sources */,
 				115E79632423726F00171CE0 /* Data.swift in Sources */,
 				111DB0372421C2B10072F108 /* SceneDelegate.swift in Sources */,
+				11E3C9752424E217009059E8 /* MyFrindProfileCollectionViewCell.swift in Sources */,
 				1150151F242223FB009CEE73 /* Feedfacebook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

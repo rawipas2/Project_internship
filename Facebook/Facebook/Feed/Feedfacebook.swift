@@ -13,6 +13,7 @@ class Postfacebook: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     func didTapOnProfileButton() {
         //
+        
         performSegue(withIdentifier: "SegueToProfileFacebookView", sender: nil)
     }
     
@@ -34,7 +35,7 @@ class Postfacebook: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (section == 0){
-            return 5
+            return 1
         }
         else {
             return Friends.count

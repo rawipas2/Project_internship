@@ -9,7 +9,7 @@
 import UIKit
 
 class Profilefacebook: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 5
     }
@@ -40,6 +40,7 @@ class Profilefacebook: UIViewController, UITableViewDelegate, UITableViewDataSou
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cells04", for: indexPath) as! FriendListTableViewCell
             cell.initFriendListTableViewCell()
+            
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cells05", for: indexPath)
