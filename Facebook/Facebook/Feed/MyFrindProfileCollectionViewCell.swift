@@ -8,8 +8,13 @@
 
 import UIKit
 
+protocol MyFrindProfileCollectionViewCellDelegate {
+    
+    func didTapOnProfileFriendButton()
+}
+
 class MyFrindProfileCollectionViewCell: UICollectionViewCell {
-    var delegate: MySelfsDelegate?
+    var delegate: MyFrindProfileCollectionViewCellDelegate?
     
 
     @IBOutlet weak var ImageFriend: UIImageView!
@@ -17,7 +22,6 @@ class MyFrindProfileCollectionViewCell: UICollectionViewCell {
     
     @IBAction func didTabOnProfileFriend(_ sender: Any) {
         
-        delegate?.didTapOnProfileButton()
-        
+        delegate?.didTapOnProfileFriendButton()
     }
 }

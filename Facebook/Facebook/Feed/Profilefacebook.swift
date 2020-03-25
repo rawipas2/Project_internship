@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Profilefacebook: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class Profilefacebook: UIViewController, UITableViewDelegate, UITableViewDataSource,FriendListTableViewCellDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 5
@@ -40,11 +40,17 @@ class Profilefacebook: UIViewController, UITableViewDelegate, UITableViewDataSou
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cells04", for: indexPath) as! FriendListTableViewCell
             cell.initFriendListTableViewCell()
+            cell.delegate = self
             
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cells05", for: indexPath)
             return cell
         }
+    }
+    
+    func didTapOnProfileFriendButton() {
+        //
+        performSegue(withIdentifier: "didTabOnProfileS", sender: nil)
     }
 }
