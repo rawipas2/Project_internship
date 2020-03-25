@@ -35,7 +35,6 @@ class Postfacebook: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (section == 0){
-            print("HHH")
             return 1
         }
         else {
