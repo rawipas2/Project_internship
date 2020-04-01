@@ -14,38 +14,13 @@ class A4ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          
-        dismiss2(animated: true) {
-            
-            let a = 0
-            let b = 2
-            let c = a + b
-        }
     }
     
     func dismiss2(animated: Bool, completion: () -> ()) {
         
-        completion()
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     @IBAction func didTapOnToA1Button(_ sender: Any) {
         
@@ -72,30 +47,6 @@ class A4ViewController: UIViewController {
         
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

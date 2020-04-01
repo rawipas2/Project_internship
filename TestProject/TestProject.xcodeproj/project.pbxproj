@@ -16,6 +16,7 @@
 		1151BD8E2423531D00CA9D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1151BD8C2423531D00CA9D88 /* LaunchScreen.storyboard */; };
 		1151BD992423531D00CA9D88 /* TestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BD982423531D00CA9D88 /* TestProjectTests.swift */; };
 		1151BDA42423531D00CA9D88 /* TestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BDA32423531D00CA9D88 /* TestProjectUITests.swift */; };
+		E01C711A242DDB320031821C /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01C7119242DDB320031821C /* Closure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1151BD9F2423531D00CA9D88 /* TestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1151BDA32423531D00CA9D88 /* TestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectUITests.swift; sourceTree = "<group>"; };
 		1151BDA52423531D00CA9D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E01C7119242DDB320031821C /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				1151BD8C2423531D00CA9D88 /* LaunchScreen.storyboard */,
 				1151BD8F2423531D00CA9D88 /* Info.plist */,
 				1144DFE924235664006426BE /* A4ViewController.swift */,
+				E01C7119242DDB320031821C /* Closure.swift */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				1151BD862423531C00CA9D88 /* ViewController.swift in Sources */,
 				1144DFEA24235664006426BE /* A4ViewController.swift in Sources */,
+				E01C711A242DDB320031821C /* Closure.swift in Sources */,
 				1151BD822423531C00CA9D88 /* AppDelegate.swift in Sources */,
 				1151BD842423531C00CA9D88 /* SceneDelegate.swift in Sources */,
 			);
