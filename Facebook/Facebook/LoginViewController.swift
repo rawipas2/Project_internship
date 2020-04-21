@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
 
     var user: User?
    
+    public static var shouldGoBackToMainRoot = false;
     
 //    @IBOutlet weak var indicatorLoading: UIActivityIndicatorView!
     @IBOutlet weak var t_username: UITextField!
@@ -63,6 +64,10 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        LoginViewController.shouldGoBackToMainRoot = false
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        sleep(3)
 //        indicatorLoading.stopAnimating()
@@ -70,6 +75,7 @@ class LoginViewController: UIViewController {
         let didOnTabbar:UITabBarController = segue.destination as! UITabBarController
         let didOnNavi:UINavigationController = didOnTabbar.viewControllers?[0] as! UINavigationController
         let didOnFeed = didOnNavi.viewControllers[0] as! FeedViewController
+//        let didOnFeed = didOnTabbar.viewControllers?[0] as! FeedViewController
         didOnFeed.user = user
         
         

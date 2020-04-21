@@ -19,6 +19,7 @@ class User: Mappable {
     var id: Id?
     var picture: Picture?
     var friends:[Friend]?
+    var titles: [Titles]?
     
     var userId:Int?
     var gender: String?
@@ -40,6 +41,7 @@ class User: Mappable {
         friends <- map["friends"]
         picture <- map["picture"]
         login <- map["login"]
+        titles <- map["titles"]
         
         userId <- map["userId"]
         gender <- map["gender"]

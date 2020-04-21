@@ -6,22 +6,39 @@
 //  Copyright © 2563 mycostech. All rights reserved.
 //
 import UIKit
+import SwiftyJSON
+import ObjectMapper
 import Alamofire
 import AlamofireImage
 
 class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var user: User?
-//    var friends: [User]?
+    var feeds: [Feed]?
     
+    @IBOutlet weak var tableFeed: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let path:String = "http://localhost:5000/api/users/getfeeds/\(user?.userId ?? 0)"
+            AF.request(path).responseJSON {
+                switch $0.result {
+                case .success(let value):
+                    let json = JSON(value).arrayObject
+                    self.feeds = json?.map {
+                        Feed(JSON: JSON($0).dictionaryObject!)!
+                    }
+                    
+                    self.tableFeed.reloadData()
+                    break
+                case .failure(let error):
+                    print(error)
+                    break
+                }
+            }
+        }
         
-//        user = User(JSON: UserAccountData["results"] as! [String : Any])
-        //friends = User(JSON: FriendsAccountData["results"] as! [String : Any])
         
-    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "ProfileScreen":
@@ -31,8 +48,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
         case "FProfileScreen":
             let toProfileScreen = segue.destination as! ProfileViewController
-            let friend:Friend = sender as! Friend
-            toProfileScreen.user = friend.user
+            
 
             break
         default: break
@@ -47,10 +63,13 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
        }
 
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
+       let count = (user == nil || (user?.isEmptyUser() ?? false)) ? 0 : 1
+       let countFeeds = (count > 0 && feeds != nil ? feeds?.count : 0) ?? 0
+    
+    
        switch section {
-       case 0: return 1 
-       default: return user?.friends?.count ?? 0
+       case 0: return count
+       default: return countFeeds
         
        }
    }
@@ -69,14 +88,15 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
                return feedcells1
            default:
                let feedcells2 = tableView.dequeueReusableCell(withIdentifier: "Feedcells02", for: indexPath) as! FeedCell2TableViewCell
-               let friend = user?.friends?[indexPath.row]
-               feedcells2.p_name?.text = friend?.name //friends?.name?.fullname
+               let feed = feeds?[indexPath.row]
+               feedcells2.p_name?.text = feed?.name //friends?.name?.fullname
                feedcells2.p_time?.text = ""
-               feedcells2.p_description?.text = friend?.description
-               feedcells2.imageName = friend?.image
-               feedcells2.c_like?.text = "Like \(friend?.like ?? 0)"
-               feedcells2.c_comment?.text = "\(friend?.comment?.name?.count ?? 0) Comment"
-               feedcells2.c_share?.text = "\(friend?.share ?? 0) Share"
+               feedcells2.p_description?.text = feed?.description
+               feedcells2.imageName = feed?.image
+               feedcells2.c_like?.text = "Like \(feed?.like ?? 0)"
+               feedcells2.c_comment?.text = "Comment"
+               feedcells2.c_share?.text = "Share"
+//               self.userID = feed?.user?.userId
                if feedcells2.imageName != nil {
                 perform(#selector(getimage(cell:)), with: feedcells2, afterDelay: 0)
                }
