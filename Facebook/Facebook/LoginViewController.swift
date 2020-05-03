@@ -22,45 +22,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func bt_login(_ sender: Any) {
         login(username: t_username.text ?? "", password: t_password.text ?? "")
-//        if user?.login?.username == t_username.text && user?.login?.password == t_password.text {
-//
-//
-//
-//
-//
-//        }
-//        else {
-//            alet.text = "An error occurred."
-//            t_username.text = nil
-//            t_password.text = nil
-//        }
-        
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        user = User(JSON: UserAccountData["results"] as! [String : Any])
-        
-//        AF.request("http://localhost:5000/api/users/1").responseJSON {
-//
-//            switch $0.result {
-//            case .success(let value):
-////                print(JSON)
-//                let json = JSON(value).dictionary?["results"]?.arrayObject?.first
-//                self.user = User(JSON: json as! [String : Any])
-//                //let json:[String:Any] = value as! [String:Any]
-////                let data =  //json.filter { $0.key == "results" }.map { $0.value }
-////                self.user =
-////                self.user = User(JSON: (value as! [String : Any]).filter({ (e) -> Bool in
-////                    e.key == "results"
-////                }).first!.value as! [String : Any])
-//                break
-//            default: print("error")
-//                break
-//            }
-//        }
-//
-        
+ 
         
     }
     
@@ -78,8 +45,8 @@ class LoginViewController: UIViewController {
 //        let didOnFeed = didOnTabbar.viewControllers?[0] as! FeedViewController
         didOnFeed.user = user
         
-        
-        
+//        address (localhost, 192.168.1.20, www.goole.com)
+//        client (App)  <------- > Host (API)
         
     }
     func login(username:String, password:String){

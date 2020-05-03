@@ -26,6 +26,8 @@ class User: Mappable {
     var phone: String?
     var cell: String?
     var email: String?
+    var imagehighlights: String?
+    var imagebg: String?
 
     
     required init?(map: Map) {
@@ -48,7 +50,8 @@ class User: Mappable {
         phone <- map["phone"]
         cell <- map["cell"]
         email <- map["email"]
-        
+        imagehighlights <- map["imagehighlights"]
+        imagebg <- map["imagebg"]
     }
     func isEmptyUser() -> Bool {
         return (userId ?? 0) == 0 || ((userId ?? 0) > 0 && name == nil)

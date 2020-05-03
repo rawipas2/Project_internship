@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="friendcollection" id="gTV-IL-0wX" customClass="Friends_CollectionViewCell" customModule="clone_Facebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="111" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="111" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7b-Do-9BS">
+                        <rect key="frame" x="0.0" y="0.0" width="111" height="136"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QHa-NG-3TL">
+                                <rect key="frame" x="0.0" y="0.0" width="111" height="136"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QHa-NG-3TL" firstAttribute="height" secondItem="K7b-Do-9BS" secondAttribute="height" id="2At-dF-Fkl"/>
+                            <constraint firstItem="QHa-NG-3TL" firstAttribute="centerY" secondItem="K7b-Do-9BS" secondAttribute="centerY" id="80V-yZ-eEA"/>
+                            <constraint firstAttribute="height" constant="136" id="BY1-vu-NL6"/>
+                            <constraint firstItem="QHa-NG-3TL" firstAttribute="width" secondItem="K7b-Do-9BS" secondAttribute="width" id="KvR-vq-YgA"/>
+                            <constraint firstAttribute="width" constant="111" id="ph7-YQ-PBJ"/>
+                            <constraint firstItem="QHa-NG-3TL" firstAttribute="centerX" secondItem="K7b-Do-9BS" secondAttribute="centerX" id="rRx-yu-G7e"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ks-H1-MhH">
+                        <rect key="frame" x="0.0" y="136" width="111" height="29"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fu-uM-gYB">
+                                <rect key="frame" x="0.0" y="0.0" width="111" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1Fu-uM-gYB" firstAttribute="top" secondItem="8ks-H1-MhH" secondAttribute="top" id="N97-To-dkP"/>
+                            <constraint firstItem="1Fu-uM-gYB" firstAttribute="leading" secondItem="8ks-H1-MhH" secondAttribute="leading" id="fwb-gN-mvk"/>
+                            <constraint firstAttribute="bottom" secondItem="1Fu-uM-gYB" secondAttribute="bottom" id="uBf-A0-Ylh"/>
+                            <constraint firstAttribute="trailing" secondItem="1Fu-uM-gYB" secondAttribute="trailing" id="vsj-Le-z6C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="K7b-Do-9BS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2SL-B5-Cfg"/>
+                <constraint firstAttribute="trailing" secondItem="8ks-H1-MhH" secondAttribute="trailing" id="AVu-yz-Ce1"/>
+                <constraint firstAttribute="bottom" secondItem="8ks-H1-MhH" secondAttribute="bottom" id="euV-DS-y3S"/>
+                <constraint firstAttribute="trailing" secondItem="K7b-Do-9BS" secondAttribute="trailing" id="hrn-7h-mEa"/>
+                <constraint firstItem="8ks-H1-MhH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mkK-Ya-N2y"/>
+                <constraint firstItem="8ks-H1-MhH" firstAttribute="top" secondItem="K7b-Do-9BS" secondAttribute="bottom" id="pov-x4-JGa"/>
+                <constraint firstItem="K7b-Do-9BS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yt8-CH-bth"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="image" destination="QHa-NG-3TL" id="gtk-ZN-cqE"/>
+                <outlet property="name" destination="1Fu-uM-gYB" id="CLV-Ev-MzH"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

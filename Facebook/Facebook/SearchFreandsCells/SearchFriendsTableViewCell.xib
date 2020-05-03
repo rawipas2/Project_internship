@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchfriend" rowHeight="59" id="KGk-i7-Jjw" customClass="SearchFriendsTableViewCell" customModule="clone_Facebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7D0-7O-afn">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="j62-P6-53i"/>
+                            <constraint firstAttribute="width" secondItem="7D0-7O-afn" secondAttribute="height" multiplier="1:1" id="vIC-T0-vB7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g3-2y-cIz">
+                        <rect key="frame" x="76" y="8" width="42" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7D0-7O-afn" secondAttribute="bottom" constant="8" id="4kJ-2p-c9K"/>
+                    <constraint firstItem="6g3-2y-cIz" firstAttribute="leading" secondItem="7D0-7O-afn" secondAttribute="trailing" constant="8" id="B3Q-Ow-REg"/>
+                    <constraint firstItem="6g3-2y-cIz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Jnu-1J-FDF"/>
+                    <constraint firstItem="7D0-7O-afn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="f6L-bu-6vm"/>
+                    <constraint firstAttribute="bottom" secondItem="6g3-2y-cIz" secondAttribute="bottom" constant="8" id="htU-Bh-I8m"/>
+                    <constraint firstItem="7D0-7O-afn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="tC5-f8-Jwx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="image_friend" destination="7D0-7O-afn" id="Eef-Wz-npm"/>
+                <outlet property="name" destination="6g3-2y-cIz" id="oRC-mw-WaZ"/>
+            </connections>
+            <point key="canvasLocation" x="187.68115942028987" y="157.70089285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

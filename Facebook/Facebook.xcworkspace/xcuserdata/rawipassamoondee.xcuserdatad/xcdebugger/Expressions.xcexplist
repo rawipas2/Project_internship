@@ -3,274 +3,13 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "Profilefacebook.viewDidLoad():Profilefacebook.swift">
+         contextName = "SettingsViewController.tableView(_:cellForRowAt:):SettingsViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "profile">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "FeedViewController.prepare(for:sender:):FeedViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "toProfileScreen.user?.userId ">
+               value = "type(of: dict?[indexPath.row])">
             </PersistentString>
             <PersistentString
-               value = "userID">
-            </PersistentString>
-            <PersistentString
-               value = " toProfileScreen.user?.userId = userID">
-            </PersistentString>
-            <PersistentString
-               value = "toProfileScreen.user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "FeedViewController.friends.getter:FeedViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "friends">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileViewController.loadUser():ProfileViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "FeedViewController.viewDidLoad():FeedViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileCell4TableViewCell.didMoveToSuperview():ProfileCell4TableViewCell.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-            <PersistentString
-               value = "return user?.friends?.count ?? 0">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "FeedViewController.loadimage(image_url:):FeedViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "image_url">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in FeedViewController.loadimage(image_url:):FeedViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "image_url">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "LoginViewController.viewDidLoad():LoginViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in LoginViewController.login(username:password:):LoginViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "error.localizedDescription">
-            </PersistentString>
-            <PersistentString
-               value = "self.user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileViewController.titlecount():ProfileViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-            <PersistentString
-               value = "ser?.title?.phone">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "Postfacebook.tableView(_:cellForRowAt:):Feedfacebook.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileViewController.tableView(_:numberOfRowsInSection:):ProfileViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "Postfacebook.viewDidLoad():Feedfacebook.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "profile">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileCell4TableViewCell.loadeFriends():ProfileCell4TableViewCell.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "friends">
-            </PersistentString>
-            <PersistentString
-               value = "user?.friends?.count ">
-            </PersistentString>
-            <PersistentString
-               value = "user?.friends">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileCell4TableViewCell.collectionView(_:numberOfItemsInSection:):ProfileCell4TableViewCell.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "return user?.friends?.count ?? 0">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileViewController.user.setter:ProfileViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "LoginViewController.bt_login(_:):LoginViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "t_email.text">
-            </PersistentString>
-            <PersistentString
-               value = "t_password.text">
-            </PersistentString>
-            <PersistentString
-               value = "user?.login?.password">
-            </PersistentString>
-            <PersistentString
-               value = "t_username.text">
-            </PersistentString>
-            <PersistentString
-               value = "user?.login?.username">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in LoginViewController.viewDidLoad():LoginViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "User(JSON: (value as! [String : Any])[&quot;results&quot;] as! [String : Any]).first">
-            </PersistentString>
-            <PersistentString
-               value = "json.dictionary![&quot;results&quot;]">
-            </PersistentString>
-            <PersistentString
-               value = "JSON(value).dictionary?[&quot;results&quot;]?.arrayObject?.first">
-            </PersistentString>
-            <PersistentString
-               value = " value as [String:Any]">
-            </PersistentString>
-            <PersistentString
-               value = "(value as! [String : Any])[&quot;results&quot;].first">
-            </PersistentString>
-            <PersistentString
-               value = "(value as! [String : Any]).first">
-            </PersistentString>
-            <PersistentString
-               value = "self.user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in ProfileCell4TableViewCell.loadeFriends():ProfileCell4TableViewCell.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "friends">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "FeedViewController.getimageProfile(cell:):FeedViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "String(describing: cell.imageName)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileCell4TableViewCell.setSelected(_:animated:):ProfileCell4TableViewCell.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "friends">
-            </PersistentString>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-            <PersistentString
-               value = "return user?.friends?.count ?? 0">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileViewController.loadImageView():ProfileViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "image">
-            </PersistentString>
-            <PersistentString
-               value = "image_url">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "FeedViewController.tableView(_:numberOfRowsInSection:):FeedViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-            <PersistentString
-               value = "user?.friends?.count">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileViewController.viewDidLoad():ProfileViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "path">
-            </PersistentString>
-            <PersistentString
-               value = "json">
-            </PersistentString>
-            <PersistentString
-               value = "user">
+               value = "dict?[indexPath.row]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -278,40 +17,29 @@
          contextName = "ProfileViewController.tableView(_:cellForRowAt:):ProfileViewController.swift">
          <PersistentStrings>
             <PersistentString
+               value = "user">
+            </PersistentString>
+            <PersistentString
                value = "loadingIm">
             </PersistentString>
             <PersistentString
-               value = "user">
+               value = "profile1.p_title.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in ProfileViewController.viewDidLoad():ProfileViewController.swift">
+         contextName = "Postfacebook.prepare(for:sender:):Feedfacebook.swift">
          <PersistentStrings>
             <PersistentString
-               value = "user">
-            </PersistentString>
-            <PersistentString
-               value = " self.user">
+               value = "profile">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ProfileViewController.init(coder:):ProfileViewController.swift">
+         contextName = "SettingsViewController.tableView(_:numberOfRowsInSection:):SettingsViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "userID">
-            </PersistentString>
-            <PersistentString
-               value = "user">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ProfileViewController.userID.setter:ProfileViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "userID">
+               value = "etting_data">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -325,18 +53,22 @@
                value = "userID">
             </PersistentString>
             <PersistentString
+               value = "feed?.comments">
+            </PersistentString>
+            <PersistentString
+               value = "feedcells2.comment">
+            </PersistentString>
+            <PersistentString
                value = "images">
             </PersistentString>
             <PersistentString
-               value = "user">
+               value = " feedcells2.postimage">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "Postfacebook.prepare(for:sender:):Feedfacebook.swift">
-         <PersistentStrings>
             <PersistentString
-               value = "profile">
+               value = " self.comment = feed?.comments">
+            </PersistentString>
+            <PersistentString
+               value = "user">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -367,10 +99,138 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in ProfileViewController.loadUser():ProfileViewController.swift">
+         contextName = "FeedViewController.viewDidLoad():FeedViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "response">
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Profilefacebook.viewDidLoad():Profilefacebook.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "profile">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FeedViewController.tableView(_:numberOfRowsInSection:):FeedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+            <PersistentString
+               value = "user?.friends?.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SeeAllFriendsViewController.resultFriends.setter:SeeAllFriendsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "resultFriends">
+            </PersistentString>
+            <PersistentString
+               value = "allFriends">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FeedViewController.friends.getter:FeedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "friends">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.loadUser():ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.userID.setter:ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ProfileCell4TableViewCell.loadeFriends():ProfileCell4TableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "friends">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:AppDelegate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CommentViewController.comments.setter:CommentViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "comments">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileCell4TableViewCell.collectionView(_:numberOfItemsInSection:):ProfileCell4TableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "return user?.friends?.count ?? 0">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ProfileViewController.viewDidLoad():ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+            <PersistentString
+               value = " self.user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileCell4TableViewCell.user.getter:ProfileCell4TableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.viewDidLoad():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.bt_login(_:):LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "t_email.text">
+            </PersistentString>
+            <PersistentString
+               value = "t_password.text">
+            </PersistentString>
+            <PersistentString
+               value = "user?.login?.password">
+            </PersistentString>
+            <PersistentString
+               value = "t_username.text">
+            </PersistentString>
+            <PersistentString
+               value = "user?.login?.username">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -383,7 +243,23 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LoginViewController.login(username:password:):LoginViewController.swift">
+         contextName = "ProfileViewController.loadImageView():ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "image">
+            </PersistentString>
+            <PersistentString
+               value = "image_url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FeedViewController.getimageProfile(cell:):FeedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(describing: cell.imageName)">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "ProfileViewController.user.getter:ProfileViewController.swift">
@@ -394,10 +270,311 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "Postfacebook.tableView(_:cellForRowAt:):Feedfacebook.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FeedViewController.loadimage(image_url:):FeedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "image_url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SettingsViewController.viewDidLoad():SettingsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "setting_data = getArrayPlist(withName: &quot;SettingMenu&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.titlecount():ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+            <PersistentString
+               value = "ser?.title?.phone">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.login(username:password:):LoginViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ProfileViewController.loadUser():ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoginViewController.viewDidLoad():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "User(JSON: (value as! [String : Any])[&quot;results&quot;] as! [String : Any]).first">
+            </PersistentString>
+            <PersistentString
+               value = "json.dictionary![&quot;results&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "JSON(value).dictionary?[&quot;results&quot;]?.arrayObject?.first">
+            </PersistentString>
+            <PersistentString
+               value = " value as [String:Any]">
+            </PersistentString>
+            <PersistentString
+               value = "(value as! [String : Any])[&quot;results&quot;].first">
+            </PersistentString>
+            <PersistentString
+               value = "(value as! [String : Any]).first">
+            </PersistentString>
+            <PersistentString
+               value = "self.user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SeeAllFriendsViewController.resultFriends.getter:SeeAllFriendsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "resultFriends">
+            </PersistentString>
+            <PersistentString
+               value = "allFriends">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Profile04TableViewCell.collectionView(_:cellForItemAt:):Profile04TableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.f_name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SeeAllFriendsViewController.init(coder:):SeeAllFriendsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "allFriends">
+            </PersistentString>
+            <PersistentString
+               value = "resultFriends">
+            </PersistentString>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Postfacebook.viewDidLoad():Feedfacebook.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "profile">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SeeAllFriendsViewController.user.setter:SeeAllFriendsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+            <PersistentString
+               value = "resultFriends">
+            </PersistentString>
+            <PersistentString
+               value = "allFriends">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in closure #1 in FeedViewController.viewDidLoad():FeedViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = " Feed(JSON: JSON($0).dictionaryObject!)!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.user.setter:ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CommentViewController.init(coder:):CommentViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "comments">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.init(coder:):ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userID">
+            </PersistentString>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.viewDidLoad():ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "path">
+            </PersistentString>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+            <PersistentString
+               value = "json">
+            </PersistentString>
+            <PersistentString
+               value = "UINib(nibName: &quot;FriendTableViewCell&quot;, bundle: nil)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SettingsViewController.getArrayPlist(withName:):SettingsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "try? PropertyListSerialization.propertyList(from: xml, options: .mutableContainersAndLeaves, format: nil)">
+            </PersistentString>
+            <PersistentString
+               value = " return (try? PropertyListSerialization.propertyList(from: xml, options: .mutableContainersAndLeaves, format: nil)) as? [String]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileCell4TableViewCell.setSelected(_:animated:):ProfileCell4TableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "friends">
+            </PersistentString>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+            <PersistentString
+               value = "return user?.friends?.count ?? 0">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FriensCollectionViewCell.setData(friend:):FriensCollectionViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "f_name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileViewController.tableView(_:numberOfRowsInSection:):ProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+            <PersistentString
+               value = "feeds?.count ?? 0">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileCell4TableViewCell.loadeFriends():ProfileCell4TableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "friends">
+            </PersistentString>
+            <PersistentString
+               value = "user?.friends?.count ">
+            </PersistentString>
+            <PersistentString
+               value = "user?.friends">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FeedViewController.prepare(for:sender:):FeedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " toProfileScreen.user?.userId = userID">
+            </PersistentString>
+            <PersistentString
+               value = "toProfileScreen.user?.userId ">
+            </PersistentString>
+            <PersistentString
+               value = "userID">
+            </PersistentString>
+            <PersistentString
+               value = "comment">
+            </PersistentString>
+            <PersistentString
+               value = "showComment.comments">
+            </PersistentString>
+            <PersistentString
+               value = "toProfileScreen.user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CommentViewController.tableView(_:cellForRowAt:):CommentViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "comments">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in FeedViewController.loadimage(image_url:):FeedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "image_url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoginViewController.login(username:password:):LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "error.localizedDescription">
+            </PersistentString>
+            <PersistentString
+               value = "self.user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Friends_CollectionViewCell.setData(friend:url:):Friends_CollectionViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "name">
+            </PersistentString>
+            <PersistentString
+               value = "image_url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProfileCell4TableViewCell.didMoveToSuperview():ProfileCell4TableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+            <PersistentString
+               value = "return user?.friends?.count ?? 0">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

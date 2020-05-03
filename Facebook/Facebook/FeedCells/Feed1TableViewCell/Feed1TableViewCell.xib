@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="feeds01cell" rowHeight="113" id="KGk-i7-Jjw" customClass="Feed1TableViewCell" customModule="clone_Facebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F22-9p-Frw">
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="76"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xRf-OF-cHH">
+                                <rect key="frame" x="8" y="8" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.1624366018" green="0.67207602330000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xRf-OF-cHH" secondAttribute="height" multiplier="1:1" id="YHh-EV-g6t"/>
+                                    <constraint firstAttribute="width" constant="60" id="nxs-Yu-DBS"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What's on your mind?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oer-Uq-MHZ">
+                                <rect key="frame" x="76" y="8" width="261" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xRf-OF-cHH" firstAttribute="leading" secondItem="F22-9p-Frw" secondAttribute="leading" constant="8" id="1nQ-Ax-yRk"/>
+                            <constraint firstAttribute="bottom" secondItem="oer-Uq-MHZ" secondAttribute="bottom" constant="8" id="FhK-ET-PdZ"/>
+                            <constraint firstAttribute="trailing" secondItem="oer-Uq-MHZ" secondAttribute="trailing" constant="8" id="Ml9-49-D6G"/>
+                            <constraint firstItem="oer-Uq-MHZ" firstAttribute="leading" secondItem="xRf-OF-cHH" secondAttribute="trailing" constant="8" id="Td3-2z-jjp"/>
+                            <constraint firstItem="xRf-OF-cHH" firstAttribute="top" secondItem="F22-9p-Frw" secondAttribute="top" constant="8" id="Ver-Ov-uq0"/>
+                            <constraint firstItem="oer-Uq-MHZ" firstAttribute="top" secondItem="F22-9p-Frw" secondAttribute="top" constant="8" id="g51-Qw-mqH"/>
+                            <constraint firstAttribute="bottom" secondItem="xRf-OF-cHH" secondAttribute="bottom" constant="8" id="vMO-pW-4jb"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zMS-3j-g9m">
+                        <rect key="frame" x="0.0" y="76" width="345" height="37"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2be-NY-sBX">
+                                <rect key="frame" x="115" y="0.0" width="115" height="37"/>
+                                <state key="normal" title="Photo">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MS9-vL-tns">
+                                <rect key="frame" x="230" y="0.0" width="115" height="37"/>
+                                <state key="normal" title="Check In">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ce-rv-gll">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="37"/>
+                                <state key="normal" title="Live">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2be-NY-sBX" firstAttribute="width" secondItem="3Ce-rv-gll" secondAttribute="width" id="8iY-LG-m6x"/>
+                            <constraint firstItem="3Ce-rv-gll" firstAttribute="leading" secondItem="zMS-3j-g9m" secondAttribute="leading" id="BIF-NL-4Yp"/>
+                            <constraint firstItem="MS9-vL-tns" firstAttribute="width" secondItem="3Ce-rv-gll" secondAttribute="width" id="CAp-Hp-K7H"/>
+                            <constraint firstItem="2be-NY-sBX" firstAttribute="top" secondItem="zMS-3j-g9m" secondAttribute="top" id="CH6-Se-Rin"/>
+                            <constraint firstItem="3Ce-rv-gll" firstAttribute="top" secondItem="zMS-3j-g9m" secondAttribute="top" id="ErZ-Sq-pt0"/>
+                            <constraint firstAttribute="bottom" secondItem="3Ce-rv-gll" secondAttribute="bottom" id="FNC-Lz-udT"/>
+                            <constraint firstAttribute="bottom" secondItem="MS9-vL-tns" secondAttribute="bottom" id="Lot-4B-kwm"/>
+                            <constraint firstAttribute="bottom" secondItem="2be-NY-sBX" secondAttribute="bottom" id="Nub-VP-zu5"/>
+                            <constraint firstItem="2be-NY-sBX" firstAttribute="leading" secondItem="3Ce-rv-gll" secondAttribute="trailing" id="Pwb-vH-NAF"/>
+                            <constraint firstItem="MS9-vL-tns" firstAttribute="top" secondItem="zMS-3j-g9m" secondAttribute="top" id="ige-jz-1X1"/>
+                            <constraint firstAttribute="trailing" secondItem="MS9-vL-tns" secondAttribute="trailing" id="sU9-oW-sPo"/>
+                            <constraint firstItem="MS9-vL-tns" firstAttribute="leading" secondItem="2be-NY-sBX" secondAttribute="trailing" id="z4q-6V-Q8F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zMS-3j-g9m" secondAttribute="trailing" id="6vl-pm-4vT"/>
+                    <constraint firstItem="zMS-3j-g9m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8gP-O6-gv9"/>
+                    <constraint firstItem="F22-9p-Frw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Z4k-Oe-NNi"/>
+                    <constraint firstAttribute="trailing" secondItem="F22-9p-Frw" secondAttribute="trailing" id="mDs-r7-9ws"/>
+                    <constraint firstAttribute="bottom" secondItem="zMS-3j-g9m" secondAttribute="bottom" id="vm2-5k-fgJ"/>
+                    <constraint firstItem="zMS-3j-g9m" firstAttribute="top" secondItem="F22-9p-Frw" secondAttribute="bottom" id="wUF-A5-66L"/>
+                    <constraint firstItem="F22-9p-Frw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="z3z-DI-qIb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageprofile" destination="xRf-OF-cHH" id="KZO-ey-svD"/>
+            </connections>
+            <point key="canvasLocation" x="-94.927536231884062" y="173.10267857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -18,10 +18,13 @@ class Feed: Mappable {
     var image: String?
     var like: Int?
     var parentUserLiked: Bool?
-    var comments: Int?
     var shareds: Int?
     var sharedLinks:[String]?
+    var imagepost:String?
+    
+    
     var user:User?
+    var comment: Comment?
     
     required init?(map: Map) {
         
@@ -30,19 +33,21 @@ class Feed: Mappable {
     func mapping(map: Map) {
         
  
-            name <- map["name"]
-            parentUserId <- map["parentUserId"]
-            feedid <- map["feedid"]
-            description <- map["description"]
-            image <- map["image"]
-            like <- map["like"]
-            parentUserLiked <- map["parentUserLiked"]
-            comments <- map["comments"]
-            shareds <- map["shareds"]
-            
-            user <- map["user"]
+    name <- map["name"]
+    parentUserId <- map["parentUserId"]
+    feedid <- map["feedid"]
+    description <- map["description"]
+    image <- map["image"]
+    like <- map["like"]
+    parentUserLiked <- map["parentUserLiked"]
+    shareds <- map["shareds"]
+    imagepost <- map["imagepost"]
+    
+    user <- map["user"]
+    comment <- map["comments"]
 
     }
     
 
 }
+
